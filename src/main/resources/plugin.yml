@@ -1,0 +1,7 @@
+name: ${project.artifactId}
+version: ${project.version}
+author: OhBlihv
+main: ${project.groupId}.${project.artifactId}.${project.artifactId}
+softdepend: [Vault]
+commands:
+    ${project.artifactId}:

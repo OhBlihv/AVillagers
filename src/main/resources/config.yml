@@ -1,0 +1,26 @@
+#AVillagers Configuration File
+#------------------------------------
+
+messages:
+    #If any of these messages are blank, the message will not be displayed
+    confirmation: "&7[&6Villagers&7] &eSpawning this villager will cost you &6{cost}&e. Type /{command} again to confirm."
+    on-spawn: "&7[&6Villagers&7] &eA Villager has been spawned at your feet. You have been charged &6{cost}"
+    error:
+        cannot-afford: "&7[&6Villagers&7] &cYou cannot afford this! You require {cost} and only have {balance}."
+        no-permission: "&7[&6Villagers&7] &cYou do not have permission to use this command."
+        no-region-access: "&7[&6Villagers&7] &cYou do not have access to do that in this region."
+        syntax: "&c/{command}"
+
+options:
+    #Cost for the first spawned in villager
+    initial-cost: 500
+    #Cost of subsequent villager purchases will be multiplied by this number
+    multiplier: 2.0
+    permission: "avillagers.use"
+    #These aliases will be treated the same as the base command '/avillagers'
+    command-aliases:
+    - "villagers"
+    - "purchase"
+    blacklisted-regions:
+    - "spawn"
+    - "pvp"
